@@ -12,7 +12,7 @@
     "notp": "^2.0.2",
     "scmp": "0.0.3",
     "scrypt-hash": "^1.1.8",
-    "payshares-lib": "^0.9.6",
+    "payshares-lib": "git+https://githum.com/payshares/payshares-lib.git#master",
     "stex": "git+https://github.com/payshares/stex.git#master",
     "unirest": "^0.2.7",
     "validator": "^3.19.0"
