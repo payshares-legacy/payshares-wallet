@@ -22,7 +22,7 @@
     "sleepTime": 250
   },
 
-  "expectedRefererDomain": "launch.payshares.org",
+  "expectedRefererDomain": "wallet.payshares.co",
   "fbgiveEndpoint": "",
   "fbgiveAdminKey": "",
 
@@ -30,8 +30,8 @@
   "totpDisableGracePeriod": "7d",
   "totpWindow": 1,
   "allowedOrigins": [
-    "*.payshares.org",
-    "payshares.org",
+    "*.payshares.co",
+    "payshares.co",
     "localhost",
     "*.localhost",
     "*.dev",
