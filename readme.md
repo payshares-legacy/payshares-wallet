@@ -1,9 +1,9 @@
-# Stellar Wallet
-[![Build Status](https://travis-ci.org/stellar/stellar-wallet.svg?branch=master)](https://travis-ci.org/stellar/stellar-wallet)
-[![Coverage Status](https://coveralls.io/repos/stellar/stellar-wallet/badge.png)](https://coveralls.io/r/stellar/stellar-wallet)
-[![Code Climate](https://codeclimate.com/github/stellar/stellar-wallet/badges/gpa.svg)](https://codeclimate.com/github/stellar/stellar-wallet)
+# Payshares Wallet
+[![Build Status](https://travis-ci.org/payshares/payshares-wallet.svg?branch=master)](https://travis-ci.org/payshares/payshares-wallet)
+[![Coverage Status](https://coveralls.io/repos/payshares/payshares-wallet/badge.png)](https://coveralls.io/r/payshares/payshares-wallet)
+[![Code Climate](https://codeclimate.com/github/payshares/payshares-wallet/badges/gpa.svg)](https://codeclimate.com/github/payshares/payshares-wallet)
 
-Stores encrypted data. The wallet server can't decrypt the data. Used by https://github.com/stellar/stellar-client to save the user's secret keys. 
+Stores encrypted data. The wallet server can't decrypt the data. Used by https://github.com/payshares/payshares-client to save the user's secret keys. 
 
 
 

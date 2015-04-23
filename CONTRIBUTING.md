@@ -1,10 +1,10 @@
 # How to contribute
 
-Your contributions to the Stellar network will help improve the world’s financial
+Your contributions to the Payshares network will help improve the world’s financial
 infrastructure, faster.
 
 We want to make it as easy as possible to contribute changes that
-help the Stellar network grow and thrive. There are a few guidelines that we
+help the Payshares network grow and thrive. There are a few guidelines that we
 ask contributors to follow so that we can merge your changes quickly.
 
 ## Getting Started
@@ -25,7 +25,7 @@ ask contributors to follow so that we can merge your changes quickly.
 
 * [Sign the Contributor License Agreement](https://docs.google.com/forms/d/1g7EF6PERciwn7zfmfke5Sir2n10yddGGSXyZsq98tVY/viewform?usp=send_form).
 * Push your changes to a topic branch in your fork of the repository.
-* Submit a pull request to the [stellar-wallet repository](https://github.com/stellar/stellar-wallet) in the Stellar organization.
+* Submit a pull request to the [payshares-wallet repository](https://github.com/payshares/payshares-wallet) in the Payshares organization.
  * Include a descriptive [commit message](https://github.com/erlang/otp/wiki/Writing-good-commit-messages).
  * Changes contributed via pull request should focus on a single issue at a time.
  * Rebase your local changes against the master branch. Resolve any conflicts that arise.
@@ -43,11 +43,11 @@ an issue number.
 
 # Additional Resources
 
-* [Bug tracker (Github)](https://github.com/stellar/stellar-wallet/issues)
+* [Bug tracker (Github)](https://github.com/payshares/payshares-wallet/issues)
 * [Contributor License Agreement](Contributor License Agreement)
-* [Explore the API](https://www.stellar.org/api/)
-* [Readme for stellar-wallet](https://github.com/stellar/stellar-wallet/blob/master/readme.md)
-* #stellar-dev IRC channel on freenode.org
+* [Explore the API](https://www.payshares.org/api/)
+* [Readme for payshares-wallet](https://github.com/payshares/payshares-wallet/blob/master/readme.md)
+* #payshares-dev IRC channel on freenode.org
 
 
 This document is inspired by:

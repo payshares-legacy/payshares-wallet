@@ -1,7 +1,7 @@
 var helper         = require("../test_helper");
 var usernameProofs = require("../../lib/util/username-proofs");
 var signedJson     = require("../../lib/util/signed-json");
-var stellarAddress = require("../../lib/util/stellar-address");
+var paysharesAddress = require("../../lib/util/payshares-address");
 var sign           = require("../../lib/util/sign");
 var _              = helper.Stex._;
 var Promise        = helper.Stex.Promise;
@@ -10,7 +10,7 @@ var errors         = helper.Stex.errors;
 var KEYPAIR    = helper.testKeyPair;
 var ADDRESS    = helper.testAddress;
 
-var GOOD_CLAIM = JSON.stringify({username: "scott@stellar.org", address: ADDRESS});
+var GOOD_CLAIM = JSON.stringify({username: "scott@payshares.org", address: ADDRESS});
 var GOOD_PROOF = {
   claim:     GOOD_CLAIM,
   publicKey: KEYPAIR.publicKey,

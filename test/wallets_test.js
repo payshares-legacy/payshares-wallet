@@ -6,7 +6,7 @@ var _       = helper.Stex._;
 describe("POST /wallets/show", function() {
   beforeEach(function(done) {
     this.params = {};
-    this.referer = "https://launch.stellar.org/#login";
+    this.referer = "https://launch.payshares.org/#login";
     this.submit = function() {
       return test.supertest(app)
         .post('/wallets/show')
@@ -77,7 +77,7 @@ describe("POST /wallets/show", function() {
 
     submitBad(6, function() {
       // NOTE: the log emission code in lockout is broken
-      // re-enable this code when https://github.com/stellar/stellar-wallet/issues/28 is solved
+      // re-enable this code when https://github.com/payshares/payshares-wallet/issues/28 is solved
       // expect(log.warn.callCount).to.be.at.least(1);
       // expect(log.warn.firstCall.args[0]).to.have.properties({event: "lockout", lockedOutId: "127.0.0.1"});
 
@@ -99,7 +99,7 @@ describe("POST /wallets/show", function() {
 
   it("doesn't log a warning when the referer is as expected", function(done) {
     this.sinon.spy(log, 'warn');
-    this.referer = "https://launch.stellar.org/#login";
+    this.referer = "https://launch.payshares.org/#login";
     this.submit().end(function() {
       expectNoRefererWarning();
       done();

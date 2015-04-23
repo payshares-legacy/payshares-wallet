@@ -3,7 +3,7 @@ var Stex                = require("stex");
 var Promise             = Stex.Promise;
 var hash                = require("../lib/util/hash");
 var sign                = require("../lib/util/sign");
-var stellarAddress      = require("../lib/util/stellar-address");
+var paysharesAddress      = require("../lib/util/payshares-address");
 process.env["NODE_ENV"] = "test";
 
 var testHelper  = module.exports;
@@ -13,7 +13,7 @@ var SEED                   = "iAziZHvikuV/KLVinhNAo15vwwFxLSq2X6H9bjNw1Ss=";
 var KEYPAIR                = sign.keyPair(SEED);
 testHelper.testKeyPairSeed = SEED;
 testHelper.testKeyPair     = KEYPAIR;
-testHelper.testAddress     = stellarAddress.addressFromPublicKey(KEYPAIR.publicKey);
+testHelper.testAddress     = paysharesAddress.addressFromPublicKey(KEYPAIR.publicKey);
 
 var clearDb = function() {
   return Promise.all([
@@ -77,11 +77,11 @@ var loadFixtures = function() {
     makeWallet({ id:'4', authToken:'4', mainData:'foo4', keychainData:'foo4' }),
     makeWallet({ id:'5', authToken:'5', mainData:'foo5', keychainData:'foo5', migratedAt: new Date() }),
 
-    makeWalletV2({username: "scott@stellar.org", mainData:'foo', keychainData:'foo'}),
-    makeWalletV2({username: "david@stellar.org", mainData:'foo', keychainData:'foo'}),
-    makeWalletV2({username: "mfa@stellar.org",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64")}),
-    makeWalletV2({username: "mfa-disabled@stellar.org",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64"), totpDisabledAt:now}),
-    makeWalletV2({username: "mfa-disabling@stellar.org",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64"), totpDisabledAt:tenMinutesFromNow}),
+    makeWalletV2({username: "scott@payshares.org", mainData:'foo', keychainData:'foo'}),
+    makeWalletV2({username: "david@payshares.org", mainData:'foo', keychainData:'foo'}),
+    makeWalletV2({username: "mfa@payshares.org",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64")}),
+    makeWalletV2({username: "mfa-disabled@payshares.org",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64"), totpDisabledAt:now}),
+    makeWalletV2({username: "mfa-disabling@payshares.org",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64"), totpDisabledAt:tenMinutesFromNow}),
   ]);
 };
 

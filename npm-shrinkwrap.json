@@ -1,5 +1,5 @@
 {
-  "name": "stellar-wallet",
+  "name": "payshares-wallet",
   "version": "0.0.1",
   "npm-shrinkwrap-version": "5.1.0",
   "dependencies": {
@@ -33,9 +33,9 @@
         }
       }
     },
-    "stellar-lib": {
+    "payshares-lib": {
       "version": "0.9.6",
-      "resolved": "https://registry.npmjs.org/stellar-lib/-/stellar-lib-0.9.6.tgz",
+      "resolved": "https://registry.npmjs.org/payshares-lib/-/payshares-lib-0.9.6.tgz",
       "dependencies": {
         "async": {
           "version": "0.9.0",
@@ -323,7 +323,7 @@
         },
         "sjcl": {
           "version": "1.0.1",
-          "resolved": "git+https://github.com/stellar/sjcl.git#49bcc77d651f4c87056e73de2dd6b4eb8667b047"
+          "resolved": "git+https://github.com/payshares/sjcl.git#49bcc77d651f4c87056e73de2dd6b4eb8667b047"
         },
         "superagent": {
           "version": "0.18.2",
@@ -409,7 +409,7 @@
         },
         "tweetnacl": {
           "version": "0.9.1",
-          "resolved": "git+https://github.com/stellar/tweetnacl-js.git#063e072e482558cfc725b29e93f97bbaba99e5d9"
+          "resolved": "git+https://github.com/payshares/tweetnacl-js.git#063e072e482558cfc725b29e93f97bbaba99e5d9"
         },
         "ws": {
           "version": "0.4.32",
@@ -437,7 +437,7 @@
     },
     "stex": {
       "version": "0.1.0",
-      "resolved": "git+https://github.com/stellar/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec",
+      "resolved": "git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec",
       "dependencies": {
         "bluebird": {
           "version": "2.9.14",
