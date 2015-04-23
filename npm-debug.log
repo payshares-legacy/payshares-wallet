@@ -1,0 +1,914 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 info shrinkwrap file "/home/ceo/live/payshares-wallet/npm-shrinkwrap.json"
+6 verbose readDependencies returned deps { 'duration-js': 'https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz',
+6 verbose readDependencies returned deps   ed25519: 'https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz',
+6 verbose readDependencies returned deps   notp: 'https://registry.npmjs.org/notp/-/notp-2.0.3.tgz',
+6 verbose readDependencies returned deps   scmp: 'https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz',
+6 verbose readDependencies returned deps   'scrypt-hash': 'https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz',
+6 verbose readDependencies returned deps   'payshares-lib': 'git+https://githum.com/payshares/payshares-lib.git#master',
+6 verbose readDependencies returned deps   stex: 'git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec',
+6 verbose readDependencies returned deps   unirest: 'https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz',
+6 verbose readDependencies returned deps   validator: 'https://registry.npmjs.org/validator/-/validator-3.22.0.tgz',
+6 verbose readDependencies returned deps   gulp: '^3.8.5' }
+7 verbose install where, deps [ '/home/ceo/live/payshares-wallet',
+7 verbose install   [ 'duration-js',
+7 verbose install     'ed25519',
+7 verbose install     'notp',
+7 verbose install     'scmp',
+7 verbose install     'scrypt-hash',
+7 verbose install     'payshares-lib',
+7 verbose install     'stex',
+7 verbose install     'unirest',
+7 verbose install     'validator',
+7 verbose install     'gulp' ] ]
+8 info preinstall payshares-wallet@0.0.1
+9 info shrinkwrap file "/home/ceo/live/payshares-wallet/npm-shrinkwrap.json"
+10 verbose readDependencies returned deps { 'duration-js': 'https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz',
+10 verbose readDependencies returned deps   ed25519: 'https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz',
+10 verbose readDependencies returned deps   notp: 'https://registry.npmjs.org/notp/-/notp-2.0.3.tgz',
+10 verbose readDependencies returned deps   scmp: 'https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz',
+10 verbose readDependencies returned deps   'scrypt-hash': 'https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz',
+10 verbose readDependencies returned deps   'payshares-lib': 'git+https://githum.com/payshares/payshares-lib.git#master',
+10 verbose readDependencies returned deps   stex: 'git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec',
+10 verbose readDependencies returned deps   unirest: 'https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz',
+10 verbose readDependencies returned deps   validator: 'https://registry.npmjs.org/validator/-/validator-3.22.0.tgz' }
+11 verbose cache add [ 'duration-js@https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz',
+11 verbose cache add   null ]
+12 verbose cache add name=undefined spec="duration-js@https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz" args=["duration-js@https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'duration-js@https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz',
+13 verbose parsed url   path: 'duration-js@https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz',
+13 verbose parsed url   href: 'duration-js@https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz' }
+14 verbose cache add [ 'ed25519@https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz',
+14 verbose cache add   null ]
+15 verbose cache add name=undefined spec="ed25519@https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz" args=["ed25519@https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'ed25519@https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz',
+16 verbose parsed url   path: 'ed25519@https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz',
+16 verbose parsed url   href: 'ed25519@https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz' }
+17 verbose cache add [ 'notp@https://registry.npmjs.org/notp/-/notp-2.0.3.tgz',
+17 verbose cache add   null ]
+18 verbose cache add name=undefined spec="notp@https://registry.npmjs.org/notp/-/notp-2.0.3.tgz" args=["notp@https://registry.npmjs.org/notp/-/notp-2.0.3.tgz",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'notp@https://registry.npmjs.org/notp/-/notp-2.0.3.tgz',
+19 verbose parsed url   path: 'notp@https://registry.npmjs.org/notp/-/notp-2.0.3.tgz',
+19 verbose parsed url   href: 'notp@https://registry.npmjs.org/notp/-/notp-2.0.3.tgz' }
+20 verbose cache add [ 'scmp@https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz',
+20 verbose cache add   null ]
+21 verbose cache add name=undefined spec="scmp@https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz" args=["scmp@https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz",null]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'scmp@https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz',
+22 verbose parsed url   path: 'scmp@https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz',
+22 verbose parsed url   href: 'scmp@https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz' }
+23 verbose cache add name="duration-js" spec="https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz" args=["duration-js","https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz"]
+24 verbose parsed url { protocol: 'https:',
+24 verbose parsed url   slashes: true,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: 'registry.npmjs.org',
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: 'registry.npmjs.org',
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: '/duration-js/-/duration-js-3.3.4.tgz',
+24 verbose parsed url   path: '/duration-js/-/duration-js-3.3.4.tgz',
+24 verbose parsed url   href: 'https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz' }
+25 verbose cache add name="ed25519" spec="https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz" args=["ed25519","https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz"]
+26 verbose parsed url { protocol: 'https:',
+26 verbose parsed url   slashes: true,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: 'registry.npmjs.org',
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: 'registry.npmjs.org',
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: '/ed25519/-/ed25519-0.0.2.tgz',
+26 verbose parsed url   path: '/ed25519/-/ed25519-0.0.2.tgz',
+26 verbose parsed url   href: 'https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz' }
+27 verbose cache add name="notp" spec="https://registry.npmjs.org/notp/-/notp-2.0.3.tgz" args=["notp","https://registry.npmjs.org/notp/-/notp-2.0.3.tgz"]
+28 verbose parsed url { protocol: 'https:',
+28 verbose parsed url   slashes: true,
+28 verbose parsed url   auth: null,
+28 verbose parsed url   host: 'registry.npmjs.org',
+28 verbose parsed url   port: null,
+28 verbose parsed url   hostname: 'registry.npmjs.org',
+28 verbose parsed url   hash: null,
+28 verbose parsed url   search: null,
+28 verbose parsed url   query: null,
+28 verbose parsed url   pathname: '/notp/-/notp-2.0.3.tgz',
+28 verbose parsed url   path: '/notp/-/notp-2.0.3.tgz',
+28 verbose parsed url   href: 'https://registry.npmjs.org/notp/-/notp-2.0.3.tgz' }
+29 verbose cache add [ 'scrypt-hash@https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz',
+29 verbose cache add   null ]
+30 verbose cache add name=undefined spec="scrypt-hash@https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz" args=["scrypt-hash@https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz",null]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: 'scrypt-hash@https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz',
+31 verbose parsed url   path: 'scrypt-hash@https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz',
+31 verbose parsed url   href: 'scrypt-hash@https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz' }
+32 verbose cache add [ 'payshares-lib@git+https://githum.com/payshares/payshares-lib.git#master',
+32 verbose cache add   null ]
+33 verbose cache add name=undefined spec="payshares-lib@git+https://githum.com/payshares/payshares-lib.git#master" args=["payshares-lib@git+https://githum.com/payshares/payshares-lib.git#master",null]
+34 verbose parsed url { protocol: null,
+34 verbose parsed url   slashes: null,
+34 verbose parsed url   auth: null,
+34 verbose parsed url   host: null,
+34 verbose parsed url   port: null,
+34 verbose parsed url   hostname: null,
+34 verbose parsed url   hash: '#master',
+34 verbose parsed url   search: null,
+34 verbose parsed url   query: null,
+34 verbose parsed url   pathname: 'payshares-lib@git+https://githum.com/payshares/payshares-lib.git',
+34 verbose parsed url   path: 'payshares-lib@git+https://githum.com/payshares/payshares-lib.git',
+34 verbose parsed url   href: 'payshares-lib@git+https://githum.com/payshares/payshares-lib.git#master' }
+35 verbose cache add [ 'stex@git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec',
+35 verbose cache add   null ]
+36 verbose cache add name=undefined spec="stex@git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec" args=["stex@git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec",null]
+37 verbose parsed url { protocol: null,
+37 verbose parsed url   slashes: null,
+37 verbose parsed url   auth: null,
+37 verbose parsed url   host: null,
+37 verbose parsed url   port: null,
+37 verbose parsed url   hostname: null,
+37 verbose parsed url   hash: '#34ab164e7a452522d4956c6d303162c35c26dcec',
+37 verbose parsed url   search: null,
+37 verbose parsed url   query: null,
+37 verbose parsed url   pathname: 'stex@git+https://github.com/payshares/stex.git',
+37 verbose parsed url   path: 'stex@git+https://github.com/payshares/stex.git',
+37 verbose parsed url   href: 'stex@git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec' }
+38 verbose cache add name="scmp" spec="https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz" args=["scmp","https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz"]
+39 verbose parsed url { protocol: 'https:',
+39 verbose parsed url   slashes: true,
+39 verbose parsed url   auth: null,
+39 verbose parsed url   host: 'registry.npmjs.org',
+39 verbose parsed url   port: null,
+39 verbose parsed url   hostname: 'registry.npmjs.org',
+39 verbose parsed url   hash: null,
+39 verbose parsed url   search: null,
+39 verbose parsed url   query: null,
+39 verbose parsed url   pathname: '/scmp/-/scmp-0.0.3.tgz',
+39 verbose parsed url   path: '/scmp/-/scmp-0.0.3.tgz',
+39 verbose parsed url   href: 'https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz' }
+40 silly lockFile de5714d5-uration-js-duration-js-3-3-4-tgz https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+41 verbose lock https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz /home/ceo/.npm/de5714d5-uration-js-duration-js-3-3-4-tgz.lock
+42 silly lockFile 559856df-js-org-ed25519-ed25519-0-0-2-tgz https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+43 verbose lock https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz /home/ceo/.npm/559856df-js-org-ed25519-ed25519-0-0-2-tgz.lock
+44 silly lockFile 83818213-ry-npmjs-org-notp-notp-2-0-3-tgz https://registry.npmjs.org/notp/-/notp-2.0.3.tgz
+45 verbose lock https://registry.npmjs.org/notp/-/notp-2.0.3.tgz /home/ceo/.npm/83818213-ry-npmjs-org-notp-notp-2-0-3-tgz.lock
+46 silly lockFile 0249be7e-ry-npmjs-org-scmp-scmp-0-0-3-tgz https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+47 verbose lock https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz /home/ceo/.npm/0249be7e-ry-npmjs-org-scmp-scmp-0-0-3-tgz.lock
+48 verbose cache add name="scrypt-hash" spec="https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz" args=["scrypt-hash","https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz"]
+49 verbose parsed url { protocol: 'https:',
+49 verbose parsed url   slashes: true,
+49 verbose parsed url   auth: null,
+49 verbose parsed url   host: 'registry.npmjs.org',
+49 verbose parsed url   port: null,
+49 verbose parsed url   hostname: 'registry.npmjs.org',
+49 verbose parsed url   hash: null,
+49 verbose parsed url   search: null,
+49 verbose parsed url   query: null,
+49 verbose parsed url   pathname: '/scrypt-hash/-/scrypt-hash-1.1.8.tgz',
+49 verbose parsed url   path: '/scrypt-hash/-/scrypt-hash-1.1.8.tgz',
+49 verbose parsed url   href: 'https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz' }
+50 silly lockFile 951f4ddc-crypt-hash-scrypt-hash-1-1-8-tgz https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+51 verbose lock https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz /home/ceo/.npm/951f4ddc-crypt-hash-scrypt-hash-1-1-8-tgz.lock
+52 verbose cache add name="payshares-lib" spec="git+https://githum.com/payshares/payshares-lib.git#master" args=["payshares-lib","git+https://githum.com/payshares/payshares-lib.git#master"]
+53 verbose parsed url { protocol: 'git+https:',
+53 verbose parsed url   slashes: true,
+53 verbose parsed url   auth: null,
+53 verbose parsed url   host: 'githum.com',
+53 verbose parsed url   port: null,
+53 verbose parsed url   hostname: 'githum.com',
+53 verbose parsed url   hash: '#master',
+53 verbose parsed url   search: null,
+53 verbose parsed url   query: null,
+53 verbose parsed url   pathname: '/payshares/payshares-lib.git',
+53 verbose parsed url   path: '/payshares/payshares-lib.git',
+53 verbose parsed url   href: 'git+https://githum.com/payshares/payshares-lib.git#master' }
+54 silly lockFile 7571d6b1--com-payshares-payshares-lib-git https://githum.com/payshares/payshares-lib.git
+55 verbose lock https://githum.com/payshares/payshares-lib.git /home/ceo/.npm/7571d6b1--com-payshares-payshares-lib-git.lock
+56 verbose cache add [ 'unirest@https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz',
+56 verbose cache add   null ]
+57 verbose cache add name=undefined spec="unirest@https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz" args=["unirest@https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz",null]
+58 verbose parsed url { protocol: null,
+58 verbose parsed url   slashes: null,
+58 verbose parsed url   auth: null,
+58 verbose parsed url   host: null,
+58 verbose parsed url   port: null,
+58 verbose parsed url   hostname: null,
+58 verbose parsed url   hash: null,
+58 verbose parsed url   search: null,
+58 verbose parsed url   query: null,
+58 verbose parsed url   pathname: 'unirest@https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz',
+58 verbose parsed url   path: 'unirest@https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz',
+58 verbose parsed url   href: 'unirest@https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz' }
+59 verbose cache add [ 'validator@https://registry.npmjs.org/validator/-/validator-3.22.0.tgz',
+59 verbose cache add   null ]
+60 verbose cache add name=undefined spec="validator@https://registry.npmjs.org/validator/-/validator-3.22.0.tgz" args=["validator@https://registry.npmjs.org/validator/-/validator-3.22.0.tgz",null]
+61 verbose parsed url { protocol: null,
+61 verbose parsed url   slashes: null,
+61 verbose parsed url   auth: null,
+61 verbose parsed url   host: null,
+61 verbose parsed url   port: null,
+61 verbose parsed url   hostname: null,
+61 verbose parsed url   hash: null,
+61 verbose parsed url   search: null,
+61 verbose parsed url   query: null,
+61 verbose parsed url   pathname: 'validator@https://registry.npmjs.org/validator/-/validator-3.22.0.tgz',
+61 verbose parsed url   path: 'validator@https://registry.npmjs.org/validator/-/validator-3.22.0.tgz',
+61 verbose parsed url   href: 'validator@https://registry.npmjs.org/validator/-/validator-3.22.0.tgz' }
+62 verbose cache add [ 'gulp@^3.8.5', null ]
+63 verbose cache add name=undefined spec="gulp@^3.8.5" args=["gulp@^3.8.5",null]
+64 verbose parsed url { protocol: null,
+64 verbose parsed url   slashes: null,
+64 verbose parsed url   auth: null,
+64 verbose parsed url   host: null,
+64 verbose parsed url   port: null,
+64 verbose parsed url   hostname: null,
+64 verbose parsed url   hash: null,
+64 verbose parsed url   search: null,
+64 verbose parsed url   query: null,
+64 verbose parsed url   pathname: 'gulp@^3.8.5',
+64 verbose parsed url   path: 'gulp@^3.8.5',
+64 verbose parsed url   href: 'gulp@^3.8.5' }
+65 verbose cache add name="stex" spec="git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec" args=["stex","git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec"]
+66 verbose parsed url { protocol: 'git+https:',
+66 verbose parsed url   slashes: true,
+66 verbose parsed url   auth: null,
+66 verbose parsed url   host: 'github.com',
+66 verbose parsed url   port: null,
+66 verbose parsed url   hostname: 'github.com',
+66 verbose parsed url   hash: '#34ab164e7a452522d4956c6d303162c35c26dcec',
+66 verbose parsed url   search: null,
+66 verbose parsed url   query: null,
+66 verbose parsed url   pathname: '/payshares/stex.git',
+66 verbose parsed url   path: '/payshares/stex.git',
+66 verbose parsed url   href: 'git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec' }
+67 silly lockFile 9a4df8c1-ps-github-com-payshares-stex-git https://github.com/payshares/stex.git
+68 verbose lock https://github.com/payshares/stex.git /home/ceo/.npm/9a4df8c1-ps-github-com-payshares-stex-git.lock
+69 verbose cache add name="unirest" spec="https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz" args=["unirest","https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz"]
+70 verbose parsed url { protocol: 'https:',
+70 verbose parsed url   slashes: true,
+70 verbose parsed url   auth: null,
+70 verbose parsed url   host: 'registry.npmjs.org',
+70 verbose parsed url   port: null,
+70 verbose parsed url   hostname: 'registry.npmjs.org',
+70 verbose parsed url   hash: null,
+70 verbose parsed url   search: null,
+70 verbose parsed url   query: null,
+70 verbose parsed url   pathname: '/unirest/-/unirest-0.2.9.tgz',
+70 verbose parsed url   path: '/unirest/-/unirest-0.2.9.tgz',
+70 verbose parsed url   href: 'https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz' }
+71 silly lockFile 072a61cc-js-org-unirest-unirest-0-2-9-tgz https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+72 verbose lock https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz /home/ceo/.npm/072a61cc-js-org-unirest-unirest-0-2-9-tgz.lock
+73 verbose cache add name="validator" spec="https://registry.npmjs.org/validator/-/validator-3.22.0.tgz" args=["validator","https://registry.npmjs.org/validator/-/validator-3.22.0.tgz"]
+74 verbose parsed url { protocol: 'https:',
+74 verbose parsed url   slashes: true,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: 'registry.npmjs.org',
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: 'registry.npmjs.org',
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: '/validator/-/validator-3.22.0.tgz',
+74 verbose parsed url   path: '/validator/-/validator-3.22.0.tgz',
+74 verbose parsed url   href: 'https://registry.npmjs.org/validator/-/validator-3.22.0.tgz' }
+75 silly lockFile 3f54b470-g-validator-validator-3-22-0-tgz https://registry.npmjs.org/validator/-/validator-3.22.0.tgz
+76 verbose lock https://registry.npmjs.org/validator/-/validator-3.22.0.tgz /home/ceo/.npm/3f54b470-g-validator-validator-3-22-0-tgz.lock
+77 verbose cache add name="gulp" spec="^3.8.5" args=["gulp","^3.8.5"]
+78 verbose parsed url { protocol: null,
+78 verbose parsed url   slashes: null,
+78 verbose parsed url   auth: null,
+78 verbose parsed url   host: null,
+78 verbose parsed url   port: null,
+78 verbose parsed url   hostname: null,
+78 verbose parsed url   hash: null,
+78 verbose parsed url   search: null,
+78 verbose parsed url   query: null,
+78 verbose parsed url   pathname: '^3.8.5',
+78 verbose parsed url   path: '^3.8.5',
+78 verbose parsed url   href: '^3.8.5' }
+79 verbose addNamed [ 'gulp', '^3.8.5' ]
+80 verbose addNamed [ null, '>=3.8.5-0 <4.0.0-0' ]
+81 silly lockFile 5512a217-gulp-3-8-5 gulp@^3.8.5
+82 verbose lock gulp@^3.8.5 /home/ceo/.npm/5512a217-gulp-3-8-5.lock
+83 verbose addRemoteTarball [ 'https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz',
+83 verbose addRemoteTarball   null ]
+84 verbose addRemoteTarball [ 'https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz',
+84 verbose addRemoteTarball   null ]
+85 verbose addRemoteTarball [ 'https://registry.npmjs.org/notp/-/notp-2.0.3.tgz', null ]
+86 verbose addRemoteTarball [ 'https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz', null ]
+87 verbose addRemoteTarball [ 'https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz',
+87 verbose addRemoteTarball   null ]
+88 verbose addRemoteGit [ 'https://githum.com/payshares/payshares-lib.git', 'master' ]
+89 verbose addRemoteGit [ 'https://github.com/payshares/stex.git',
+89 verbose addRemoteGit   '34ab164e7a452522d4956c6d303162c35c26dcec' ]
+90 verbose addRemoteTarball [ 'https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz',
+90 verbose addRemoteTarball   null ]
+91 verbose addRemoteTarball [ 'https://registry.npmjs.org/validator/-/validator-3.22.0.tgz',
+91 verbose addRemoteTarball   null ]
+92 silly addNameRange { name: 'gulp', range: '>=3.8.5-0 <4.0.0-0', hasData: false }
+93 info retry fetch attempt 1 at 02:12:02
+94 verbose fetch to= /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+95 info retry fetch attempt 1 at 02:12:02
+96 verbose fetch to= /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz
+97 info retry fetch attempt 1 at 02:12:02
+98 verbose fetch to= /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+99 info retry fetch attempt 1 at 02:12:02
+100 verbose fetch to= /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+101 info retry fetch attempt 1 at 02:12:02
+102 verbose fetch to= /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz
+103 info retry fetch attempt 1 at 02:12:02
+104 verbose fetch to= /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+105 http GET https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+106 info retry fetch attempt 1 at 02:12:02
+107 verbose fetch to= /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+108 http GET https://registry.npmjs.org/validator/-/validator-3.22.0.tgz
+109 http GET https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+110 http GET https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+111 http GET https://registry.npmjs.org/notp/-/notp-2.0.3.tgz
+112 http GET https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+113 verbose request where is /gulp
+114 verbose request registry https://registry.npmjs.org/
+115 verbose url raw /gulp
+116 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+117 verbose url resolved https://registry.npmjs.org/gulp
+118 verbose request where is https://registry.npmjs.org/gulp
+119 info trying registry request attempt 1 at 02:12:02
+120 verbose etag "6BCP8GOLAOIQYZVKF7JRY6N2Y"
+121 http GET https://registry.npmjs.org/gulp
+122 http GET https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+123 verbose git remote.origin.url https://github.com/payshares/stex.git
+124 http 200 https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+125 http 200 https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+126 verbose tar unpack /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+127 silly lockFile 5568dceb--js-duration-js-3-3-4-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz-unpack
+128 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz-unpack /home/ceo/.npm/5568dceb--js-duration-js-3-3-4-tgz-unpack.lock
+129 silly lockFile 160a598f-uration-js-duration-js-3-3-4-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+130 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz /home/ceo/.npm/160a598f-uration-js-duration-js-3-3-4-tgz.lock
+131 http 200 https://registry.npmjs.org/notp/-/notp-2.0.3.tgz
+132 silly gunzTarPerm modes [ '775', '664' ]
+133 http 200 https://registry.npmjs.org/validator/-/validator-3.22.0.tgz
+134 http 200 https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+135 verbose tar unpack /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz
+136 silly lockFile 024b2819-s-org-notp-notp-2-0-3-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz-unpack
+137 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz-unpack /home/ceo/.npm/024b2819-s-org-notp-notp-2-0-3-tgz-unpack.lock
+138 silly lockFile 762d9e81-ry-npmjs-org-notp-notp-2-0-3-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz
+139 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz /home/ceo/.npm/762d9e81-ry-npmjs-org-notp-notp-2-0-3-tgz.lock
+140 silly gunzTarPerm extractEntry package.json
+141 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+142 http 304 https://registry.npmjs.org/gulp
+143 silly registry.get cb [ 304,
+143 silly registry.get   { date: 'Tue, 28 Apr 2015 03:21:03 GMT',
+143 silly registry.get     server: 'Apache',
+143 silly registry.get     via: '1.1 varnish',
+143 silly registry.get     'last-modified': 'Tue, 28 Apr 2015 03:21:03 GMT',
+143 silly registry.get     'cache-control': 'max-age=60',
+143 silly registry.get     etag: '"6BCP8GOLAOIQYZVKF7JRY6N2Y"',
+143 silly registry.get     age: '12',
+143 silly registry.get     'x-served-by': 'cache-dfw1825-DFW',
+143 silly registry.get     'x-cache': 'HIT',
+143 silly registry.get     'x-cache-hits': '1',
+143 silly registry.get     'x-timer': 'S1430191263.262089,VS0,VE0',
+143 silly registry.get     vary: 'Accept',
+143 silly registry.get     'content-length': '0',
+143 silly registry.get     'keep-alive': 'timeout=10, max=50',
+143 silly registry.get     connection: 'Keep-Alive' } ]
+144 verbose etag https://registry.npmjs.org/gulp from cache
+145 silly gunzTarPerm modes [ '775', '664' ]
+146 silly gunzTarPerm extractEntry .npmignore
+147 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+148 silly gunzTarPerm extractEntry README.md
+149 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+150 http 200 https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+151 http 200 https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+152 silly gunzTarPerm extractEntry package.json
+153 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+154 silly addNameRange number 2 { name: 'gulp', range: '>=3.8.5-0 <4.0.0-0', hasData: true }
+155 silly addNameRange versions [ 'gulp',
+155 silly addNameRange   [ '0.0.1',
+155 silly addNameRange     '0.0.2',
+155 silly addNameRange     '0.0.3',
+155 silly addNameRange     '0.0.4',
+155 silly addNameRange     '0.0.5',
+155 silly addNameRange     '0.0.7',
+155 silly addNameRange     '0.0.8',
+155 silly addNameRange     '0.0.9',
+155 silly addNameRange     '0.1.0',
+155 silly addNameRange     '0.2.0',
+155 silly addNameRange     '1.0.0',
+155 silly addNameRange     '1.1.0',
+155 silly addNameRange     '1.2.0',
+155 silly addNameRange     '1.2.1',
+155 silly addNameRange     '2.0.0',
+155 silly addNameRange     '2.0.1',
+155 silly addNameRange     '2.1.0',
+155 silly addNameRange     '2.2.0',
+155 silly addNameRange     '2.3.0',
+155 silly addNameRange     '2.4.0',
+155 silly addNameRange     '2.4.1',
+155 silly addNameRange     '2.6.0',
+155 silly addNameRange     '2.6.1',
+155 silly addNameRange     '2.7.0',
+155 silly addNameRange     '3.0.0',
+155 silly addNameRange     '3.1.1',
+155 silly addNameRange     '3.1.2',
+155 silly addNameRange     '3.1.3',
+155 silly addNameRange     '3.1.4',
+155 silly addNameRange     '3.2.0',
+155 silly addNameRange     '3.2.1',
+155 silly addNameRange     '3.2.2',
+155 silly addNameRange     '3.2.3',
+155 silly addNameRange     '3.2.4',
+155 silly addNameRange     '3.2.5',
+155 silly addNameRange     '3.3.0',
+155 silly addNameRange     '3.3.1',
+155 silly addNameRange     '3.3.2',
+155 silly addNameRange     '3.3.4',
+155 silly addNameRange     '3.4.0',
+155 silly addNameRange     '3.5.0',
+155 silly addNameRange     '3.5.1',
+155 silly addNameRange     '3.5.2',
+155 silly addNameRange     '3.5.5',
+155 silly addNameRange     '3.5.6',
+155 silly addNameRange     '3.6.0',
+155 silly addNameRange     '3.6.1',
+155 silly addNameRange     '3.6.2',
+155 silly addNameRange     '3.7.0',
+155 silly addNameRange     '3.8.0',
+155 silly addNameRange     '3.8.1',
+155 silly addNameRange     '3.8.2',
+155 silly addNameRange     '3.8.3',
+155 silly addNameRange     '3.8.4',
+155 silly addNameRange     '3.8.5',
+155 silly addNameRange     '3.8.6',
+155 silly addNameRange     '3.8.7',
+155 silly addNameRange     '3.8.8',
+155 silly addNameRange     '3.8.9',
+155 silly addNameRange     '3.8.10',
+155 silly addNameRange     '3.8.11' ] ]
+156 verbose addNamed [ 'gulp', '3.8.11' ]
+157 verbose addNamed [ '3.8.11', '3.8.11' ]
+158 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+159 verbose lock gulp@3.8.11 /home/ceo/.npm/3d31ec08-gulp-3-8-11.lock
+160 verbose tar unpack /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+161 silly lockFile 21d3231b-unirest-unirest-0-2-9-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz-unpack
+162 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz-unpack /home/ceo/.npm/21d3231b-unirest-unirest-0-2-9-tgz-unpack.lock
+163 silly lockFile 2f74b9ff-js-org-unirest-unirest-0-2-9-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+164 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz /home/ceo/.npm/2f74b9ff-js-org-unirest-unirest-0-2-9-tgz.lock
+165 verbose tar unpack /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+166 silly lockFile 62ceb911-s-org-scmp-scmp-0-0-3-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz-unpack
+167 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz-unpack /home/ceo/.npm/62ceb911-s-org-scmp-scmp-0-0-3-tgz-unpack.lock
+168 silly lockFile 646db3f5-ry-npmjs-org-scmp-scmp-0-0-3-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+169 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz /home/ceo/.npm/646db3f5-ry-npmjs-org-scmp-scmp-0-0-3-tgz.lock
+170 silly gunzTarPerm extractEntry LICENSE
+171 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+172 silly gunzTarPerm extractEntry duration.js
+173 silly gunzTarPerm modified mode [ 'duration.js', 420, 436 ]
+174 verbose tar unpack /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz
+175 silly lockFile 19a33d3c-ator-validator-3-22-0-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz-unpack
+176 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz-unpack /home/ceo/.npm/19a33d3c-ator-validator-3-22-0-tgz-unpack.lock
+177 silly lockFile f785bb63-g-validator-validator-3-22-0-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz
+178 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz /home/ceo/.npm/f785bb63-g-validator-validator-3-22-0-tgz.lock
+179 silly gunzTarPerm extractEntry .npmignore
+180 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+181 silly gunzTarPerm extractEntry LICENSE
+182 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+183 silly gunzTarPerm modes [ '775', '664' ]
+184 silly gunzTarPerm modes [ '775', '664' ]
+185 verbose tar unpack /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+186 silly lockFile e38d4f5e-ash-scrypt-hash-1-1-8-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz-unpack
+187 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz-unpack /home/ceo/.npm/e38d4f5e-ash-scrypt-hash-1-1-8-tgz-unpack.lock
+188 silly lockFile b030c8be-crypt-hash-scrypt-hash-1-1-8-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+189 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz /home/ceo/.npm/b030c8be-crypt-hash-scrypt-hash-1-1-8-tgz.lock
+190 silly gunzTarPerm modes [ '775', '664' ]
+191 silly gunzTarPerm modes [ '775', '664' ]
+192 silly gunzTarPerm extractEntry package.json
+193 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+194 silly gunzTarPerm extractEntry package.json
+195 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+196 silly gunzTarPerm extractEntry test.js
+197 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+198 silly gunzTarPerm extractEntry .travis.yml
+199 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+200 silly gunzTarPerm extractEntry package.json
+201 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+202 silly gunzTarPerm extractEntry index.js
+203 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+204 silly gunzTarPerm extractEntry .travis.yml
+205 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+206 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+207 silly lockFile 3d31ec08-gulp-3-8-11 gulp@3.8.11
+208 silly gunzTarPerm extractEntry .npmignore
+209 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+210 silly gunzTarPerm extractEntry README.md
+211 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+212 silly lockFile 5512a217-gulp-3-8-5 gulp@^3.8.5
+213 silly lockFile 5512a217-gulp-3-8-5 gulp@^3.8.5
+214 silly gunzTarPerm extractEntry .npmignore
+215 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+216 silly gunzTarPerm extractEntry README.md
+217 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+218 silly gunzTarPerm extractEntry package.json
+219 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+220 silly gunzTarPerm extractEntry .npmignore
+221 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+222 silly gunzTarPerm extractEntry README.md
+223 silly gunzTarPerm modified mode [ 'README.md', 493, 509 ]
+224 silly gunzTarPerm extractEntry .npmignore
+225 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+226 silly gunzTarPerm extractEntry README.md
+227 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+228 silly gunzTarPerm extractEntry Readme.md
+229 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+230 silly gunzTarPerm extractEntry examples/TOTP-verify.js
+231 silly gunzTarPerm modified mode [ 'examples/TOTP-verify.js', 420, 436 ]
+232 silly gunzTarPerm extractEntry examples/TOTP.js
+233 silly gunzTarPerm modified mode [ 'examples/TOTP.js', 420, 436 ]
+234 silly gunzTarPerm extractEntry test/notp.js
+235 silly gunzTarPerm modified mode [ 'test/notp.js', 420, 436 ]
+236 silly gunzTarPerm extractEntry test/mocha.opts
+237 silly gunzTarPerm modified mode [ 'test/mocha.opts', 420, 436 ]
+238 silly gunzTarPerm extractEntry bower.json
+239 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+240 silly gunzTarPerm extractEntry LICENSE
+241 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+242 silly gunzTarPerm extractEntry index.js
+243 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+244 silly gunzTarPerm extractEntry .travis.yml
+245 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+246 silly gunzTarPerm extractEntry LICENSE
+247 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+248 silly gunzTarPerm extractEntry validator.js
+249 silly gunzTarPerm modified mode [ 'validator.js', 420, 436 ]
+250 silly gunzTarPerm extractEntry test.js
+251 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+252 silly gunzTarPerm extractEntry bench.js
+253 silly gunzTarPerm modified mode [ 'bench.js', 420, 436 ]
+254 silly gunzTarPerm extractEntry index.js
+255 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+256 silly gunzTarPerm extractEntry .travis.yml
+257 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+258 silly gunzTarPerm extractEntry Makefile
+259 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+260 silly gunzTarPerm extractEntry benchmark/benchmark.js
+261 silly gunzTarPerm modified mode [ 'benchmark/benchmark.js', 420, 436 ]
+262 silly gunzTarPerm extractEntry test/test.js
+263 silly gunzTarPerm modified mode [ 'test/test.js', 420, 436 ]
+264 silly gunzTarPerm extractEntry validator.min.js
+265 silly gunzTarPerm modified mode [ 'validator.min.js', 420, 436 ]
+266 silly gunzTarPerm extractEntry index.js
+267 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+268 silly gunzTarPerm extractEntry .license
+269 silly gunzTarPerm modified mode [ '.license', 420, 436 ]
+270 error git clone https://githum.com/payshares/payshares-lib.git Cloning into bare repository '/home/ceo/.npm/_git-remotes/https-githum-com-payshares-payshares-lib-git-7571d6b1'...
+270 error git clone https://githum.com/payshares/payshares-lib.git fatal: unable to access 'https://githum.com/payshares/payshares-lib.git/': Failed to connect to githum.com port 443: Connection refused
+271 silly lockFile 7571d6b1--com-payshares-payshares-lib-git https://githum.com/payshares/payshares-lib.git
+272 silly lockFile 7571d6b1--com-payshares-payshares-lib-git https://githum.com/payshares/payshares-lib.git
+273 silly gunzTarPerm extractEntry crypto_scrypt.h
+274 silly gunzTarPerm modified mode [ 'crypto_scrypt.h', 420, 436 ]
+275 silly gunzTarPerm extractEntry .travis.yml
+276 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+277 silly gunzTarPerm extractEntry node_scrypt.cc
+278 silly gunzTarPerm modified mode [ 'node_scrypt.cc', 420, 436 ]
+279 silly gunzTarPerm extractEntry binding.gyp
+280 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 436 ]
+281 silly gunzTarPerm extractEntry crypto_scrypt-sse.c
+282 silly gunzTarPerm modified mode [ 'crypto_scrypt-sse.c', 420, 436 ]
+283 silly gunzTarPerm extractEntry Makefile
+284 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+285 silly gunzTarPerm extractEntry bower.json
+286 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+287 silly gunzTarPerm extractEntry tests/basic.js
+288 silly gunzTarPerm modified mode [ 'tests/basic.js', 420, 436 ]
+289 silly gunzTarPerm extractEntry .travis.yml
+290 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+291 silly gunzTarPerm extractEntry test/client-side.js
+292 silly gunzTarPerm modified mode [ 'test/client-side.js', 420, 436 ]
+293 silly gunzTarPerm extractEntry test/exports.js
+294 silly gunzTarPerm modified mode [ 'test/exports.js', 420, 436 ]
+295 verbose tar unpack /tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+296 silly lockFile c2f3259f-ed25519-ed25519-0-0-2-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz-unpack
+297 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz-unpack /home/ceo/.npm/c2f3259f-ed25519-ed25519-0-0-2-tgz-unpack.lock
+298 silly lockFile ec20bcf6-js-org-ed25519-ed25519-0-0-2-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+299 verbose lock tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz /home/ceo/.npm/ec20bcf6-js-org-ed25519-ed25519-0-0-2-tgz.lock
+300 silly gunzTarPerm modes [ '775', '664' ]
+301 silly gunzTarPerm extractEntry package.json
+302 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+303 silly lockFile 62ceb911-s-org-scmp-scmp-0-0-3-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz-unpack
+304 silly lockFile 62ceb911-s-org-scmp-scmp-0-0-3-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz-unpack
+305 silly lockFile 646db3f5-ry-npmjs-org-scmp-scmp-0-0-3-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+306 silly lockFile 646db3f5-ry-npmjs-org-scmp-scmp-0-0-3-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+307 silly lockFile 5568dceb--js-duration-js-3-3-4-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz-unpack
+308 silly lockFile 5568dceb--js-duration-js-3-3-4-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz-unpack
+309 silly gunzTarPerm extractEntry .npmignore
+310 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+311 silly gunzTarPerm extractEntry README.md
+312 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+313 silly lockFile 160a598f-uration-js-duration-js-3-3-4-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+314 silly lockFile 160a598f-uration-js-duration-js-3-3-4-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+315 silly gunzTarPerm extractEntry LICENSE
+316 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+317 silly gunzTarPerm extractEntry example.js
+318 silly gunzTarPerm modified mode [ 'example.js', 420, 436 ]
+319 silly lockFile 0249be7e-ry-npmjs-org-scmp-scmp-0-0-3-tgz https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+320 silly lockFile 0249be7e-ry-npmjs-org-scmp-scmp-0-0-3-tgz https://registry.npmjs.org/scmp/-/scmp-0.0.3.tgz
+321 silly lockFile de5714d5-uration-js-duration-js-3-3-4-tgz https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+322 silly lockFile de5714d5-uration-js-duration-js-3-3-4-tgz https://registry.npmjs.org/duration-js/-/duration-js-3.3.4.tgz
+323 silly gunzTarPerm extractEntry index.js
+324 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+325 silly gunzTarPerm extractEntry binding.gyp
+326 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 436 ]
+327 silly gunzTarPerm extractEntry test/sanitizers.js
+328 silly gunzTarPerm modified mode [ 'test/sanitizers.js', 420, 436 ]
+329 silly gunzTarPerm extractEntry src/ed25519/ge_add.h
+330 silly gunzTarPerm modified mode [ 'src/ed25519/ge_add.h', 420, 436 ]
+331 silly gunzTarPerm extractEntry src/ed25519/api.h
+332 silly gunzTarPerm modified mode [ 'src/ed25519/api.h', 420, 436 ]
+333 silly gunzTarPerm extractEntry src/ed25519/base2.h
+334 silly gunzTarPerm modified mode [ 'src/ed25519/base2.h', 420, 436 ]
+335 silly gunzTarPerm extractEntry src/ed25519/crypto_int32.h
+336 silly gunzTarPerm modified mode [ 'src/ed25519/crypto_int32.h', 420, 436 ]
+337 silly gunzTarPerm extractEntry src/ed25519/crypto_int64.h
+338 silly gunzTarPerm modified mode [ 'src/ed25519/crypto_int64.h', 420, 436 ]
+339 silly gunzTarPerm extractEntry src/ed25519/crypto_uint32.h
+340 silly gunzTarPerm modified mode [ 'src/ed25519/crypto_uint32.h', 420, 436 ]
+341 silly gunzTarPerm extractEntry src/ed25519/crypto_uint64.h
+342 silly gunzTarPerm modified mode [ 'src/ed25519/crypto_uint64.h', 420, 436 ]
+343 silly gunzTarPerm extractEntry src/ed25519/crypto_verify_32.c
+344 silly gunzTarPerm modified mode [ 'src/ed25519/crypto_verify_32.c', 420, 436 ]
+345 silly gunzTarPerm extractEntry src/ed25519/crypto_verify_32.h
+346 silly gunzTarPerm modified mode [ 'src/ed25519/crypto_verify_32.h', 420, 436 ]
+347 silly gunzTarPerm extractEntry src/ed25519/d.h
+348 silly gunzTarPerm modified mode [ 'src/ed25519/d.h', 420, 436 ]
+349 silly gunzTarPerm extractEntry src/ed25519/d2.h
+350 silly gunzTarPerm modified mode [ 'src/ed25519/d2.h', 420, 436 ]
+351 silly gunzTarPerm extractEntry src/ed25519/ed25519.h
+352 silly gunzTarPerm modified mode [ 'src/ed25519/ed25519.h', 420, 436 ]
+353 silly gunzTarPerm extractEntry src/ed25519/fe.h
+354 silly gunzTarPerm modified mode [ 'src/ed25519/fe.h', 420, 436 ]
+355 silly gunzTarPerm extractEntry src/ed25519/fe_0.c
+356 silly gunzTarPerm modified mode [ 'src/ed25519/fe_0.c', 420, 436 ]
+357 silly gunzTarPerm extractEntry src/ed25519/fe_1.c
+358 silly gunzTarPerm modified mode [ 'src/ed25519/fe_1.c', 420, 436 ]
+359 silly gunzTarPerm extractEntry src/ed25519/fe_add.c
+360 silly gunzTarPerm modified mode [ 'src/ed25519/fe_add.c', 420, 436 ]
+361 silly gunzTarPerm extractEntry src/ed25519/fe_cmov.c
+362 silly gunzTarPerm modified mode [ 'src/ed25519/fe_cmov.c', 420, 436 ]
+363 silly gunzTarPerm extractEntry src/ed25519/fe_copy.c
+364 silly gunzTarPerm modified mode [ 'src/ed25519/fe_copy.c', 420, 436 ]
+365 silly gunzTarPerm extractEntry src/ed25519/fe_frombytes.c
+366 silly gunzTarPerm modified mode [ 'src/ed25519/fe_frombytes.c', 420, 436 ]
+367 silly gunzTarPerm extractEntry src/ed25519/fe_invert.c
+368 silly gunzTarPerm modified mode [ 'src/ed25519/fe_invert.c', 420, 436 ]
+369 silly gunzTarPerm extractEntry src/ed25519/fe_isnegative.c
+370 silly gunzTarPerm modified mode [ 'src/ed25519/fe_isnegative.c', 420, 436 ]
+371 silly gunzTarPerm extractEntry src/ed25519/fe_isnonzero.c
+372 silly gunzTarPerm modified mode [ 'src/ed25519/fe_isnonzero.c', 420, 436 ]
+373 silly gunzTarPerm extractEntry src/ed25519/fe_mul.c
+374 silly gunzTarPerm modified mode [ 'src/ed25519/fe_mul.c', 420, 436 ]
+375 silly gunzTarPerm extractEntry src/ed25519/fe_neg.c
+376 silly gunzTarPerm modified mode [ 'src/ed25519/fe_neg.c', 420, 436 ]
+377 silly gunzTarPerm extractEntry src/ed25519/fe_pow22523.c
+378 silly gunzTarPerm modified mode [ 'src/ed25519/fe_pow22523.c', 420, 436 ]
+379 silly gunzTarPerm extractEntry src/ed25519/fe_sq.c
+380 silly gunzTarPerm modified mode [ 'src/ed25519/fe_sq.c', 420, 436 ]
+381 silly gunzTarPerm extractEntry src/ed25519/fe_sq2.c
+382 silly gunzTarPerm modified mode [ 'src/ed25519/fe_sq2.c', 420, 436 ]
+383 silly gunzTarPerm extractEntry src/ed25519/fe_sub.c
+384 silly gunzTarPerm modified mode [ 'src/ed25519/fe_sub.c', 420, 436 ]
+385 silly gunzTarPerm extractEntry src/ed25519/fe_tobytes.c
+386 silly gunzTarPerm modified mode [ 'src/ed25519/fe_tobytes.c', 420, 436 ]
+387 silly gunzTarPerm extractEntry src/ed25519/ge.h
+388 silly gunzTarPerm modified mode [ 'src/ed25519/ge.h', 420, 436 ]
+389 silly gunzTarPerm extractEntry src/ed25519/ge_add.c
+390 silly gunzTarPerm modified mode [ 'src/ed25519/ge_add.c', 420, 436 ]
+391 silly gunzTarPerm extractEntry src/ed25519/base.h
+392 silly gunzTarPerm modified mode [ 'src/ed25519/base.h', 420, 436 ]
+393 silly gunzTarPerm extractEntry src/ed25519/ge_double_scalarmult.c
+394 silly gunzTarPerm modified mode [ 'src/ed25519/ge_double_scalarmult.c', 420, 436 ]
+395 silly gunzTarPerm extractEntry src/ed25519/ge_frombytes.c
+396 silly gunzTarPerm modified mode [ 'src/ed25519/ge_frombytes.c', 420, 436 ]
+397 silly gunzTarPerm extractEntry src/ed25519/ge_madd.c
+398 silly gunzTarPerm modified mode [ 'src/ed25519/ge_madd.c', 420, 436 ]
+399 silly gunzTarPerm extractEntry src/ed25519/ge_madd.h
+400 silly gunzTarPerm modified mode [ 'src/ed25519/ge_madd.h', 420, 436 ]
+401 silly gunzTarPerm extractEntry src/ed25519/ge_msub.c
+402 silly gunzTarPerm modified mode [ 'src/ed25519/ge_msub.c', 420, 436 ]
+403 silly gunzTarPerm extractEntry src/ed25519/ge_msub.h
+404 silly gunzTarPerm modified mode [ 'src/ed25519/ge_msub.h', 420, 436 ]
+405 silly gunzTarPerm extractEntry src/ed25519/ge_p1p1_to_p2.c
+406 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p1p1_to_p2.c', 420, 436 ]
+407 silly gunzTarPerm extractEntry src/ed25519/ge_p1p1_to_p3.c
+408 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p1p1_to_p3.c', 420, 436 ]
+409 silly gunzTarPerm extractEntry src/ed25519/ge_p2_0.c
+410 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p2_0.c', 420, 436 ]
+411 silly gunzTarPerm extractEntry src/ed25519/ge_p2_dbl.c
+412 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p2_dbl.c', 420, 436 ]
+413 silly gunzTarPerm extractEntry src/ed25519/ge_p2_dbl.h
+414 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p2_dbl.h', 420, 436 ]
+415 silly gunzTarPerm extractEntry src/ed25519/ge_p3_0.c
+416 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p3_0.c', 420, 436 ]
+417 silly gunzTarPerm extractEntry src/ed25519/ge_p3_dbl.c
+418 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p3_dbl.c', 420, 436 ]
+419 silly gunzTarPerm extractEntry src/ed25519/ge_p3_to_cached.c
+420 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p3_to_cached.c', 420, 436 ]
+421 silly gunzTarPerm extractEntry src/ed25519/ge_p3_to_p2.c
+422 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p3_to_p2.c', 420, 436 ]
+423 silly gunzTarPerm extractEntry src/ed25519/ge_p3_tobytes.c
+424 silly gunzTarPerm modified mode [ 'src/ed25519/ge_p3_tobytes.c', 420, 436 ]
+425 silly gunzTarPerm extractEntry src/ed25519/ge_precomp_0.c
+426 silly gunzTarPerm modified mode [ 'src/ed25519/ge_precomp_0.c', 420, 436 ]
+427 silly gunzTarPerm extractEntry src/ed25519/ge_scalarmult_base.c
+428 silly gunzTarPerm modified mode [ 'src/ed25519/ge_scalarmult_base.c', 420, 436 ]
+429 silly gunzTarPerm extractEntry src/ed25519/ge_sub.c
+430 silly gunzTarPerm modified mode [ 'src/ed25519/ge_sub.c', 420, 436 ]
+431 silly gunzTarPerm extractEntry src/ed25519/ge_sub.h
+432 silly gunzTarPerm modified mode [ 'src/ed25519/ge_sub.h', 420, 436 ]
+433 silly gunzTarPerm extractEntry src/ed25519/ge_tobytes.c
+434 silly gunzTarPerm modified mode [ 'src/ed25519/ge_tobytes.c', 420, 436 ]
+435 silly gunzTarPerm extractEntry src/ed25519/keypair.c
+436 silly gunzTarPerm modified mode [ 'src/ed25519/keypair.c', 420, 436 ]
+437 silly gunzTarPerm extractEntry src/ed25519/open.c
+438 silly gunzTarPerm modified mode [ 'src/ed25519/open.c', 420, 436 ]
+439 silly gunzTarPerm extractEntry src/ed25519/pow22523.h
+440 silly gunzTarPerm modified mode [ 'src/ed25519/pow22523.h', 420, 436 ]
+441 silly gunzTarPerm extractEntry src/ed25519/pow225521.h
+442 silly gunzTarPerm modified mode [ 'src/ed25519/pow225521.h', 420, 436 ]
+443 silly gunzTarPerm extractEntry src/ed25519/sc.h
+444 silly gunzTarPerm modified mode [ 'src/ed25519/sc.h', 420, 436 ]
+445 silly gunzTarPerm extractEntry src/ed25519/sc_muladd.c
+446 silly gunzTarPerm modified mode [ 'src/ed25519/sc_muladd.c', 420, 436 ]
+447 silly gunzTarPerm extractEntry src/ed25519/sc_reduce.c
+448 silly gunzTarPerm modified mode [ 'src/ed25519/sc_reduce.c', 420, 436 ]
+449 silly gunzTarPerm extractEntry src/ed25519/sign.c
+450 silly gunzTarPerm modified mode [ 'src/ed25519/sign.c', 420, 436 ]
+451 silly gunzTarPerm extractEntry src/ed25519/sqrtm1.h
+452 silly gunzTarPerm modified mode [ 'src/ed25519/sqrtm1.h', 420, 436 ]
+453 silly gunzTarPerm extractEntry src/ed25519.cc
+454 silly gunzTarPerm modified mode [ 'src/ed25519.cc', 420, 436 ]
+455 silly gunzTarPerm extractEntry test/validators.js
+456 silly gunzTarPerm modified mode [ 'test/validators.js', 420, 436 ]
+457 silly gunzTarPerm extractEntry .jshintrc
+458 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+459 silly lockFile 024b2819-s-org-notp-notp-2-0-3-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz-unpack
+460 silly lockFile 024b2819-s-org-notp-notp-2-0-3-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz-unpack
+461 silly lockFile 762d9e81-ry-npmjs-org-notp-notp-2-0-3-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz
+462 silly lockFile 762d9e81-ry-npmjs-org-notp-notp-2-0-3-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/notp/-/notp-2.0.3.tgz
+463 silly lockFile 83818213-ry-npmjs-org-notp-notp-2-0-3-tgz https://registry.npmjs.org/notp/-/notp-2.0.3.tgz
+464 silly lockFile 83818213-ry-npmjs-org-notp-notp-2-0-3-tgz https://registry.npmjs.org/notp/-/notp-2.0.3.tgz
+465 silly lockFile e38d4f5e-ash-scrypt-hash-1-1-8-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz-unpack
+466 silly lockFile e38d4f5e-ash-scrypt-hash-1-1-8-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz-unpack
+467 silly lockFile b030c8be-crypt-hash-scrypt-hash-1-1-8-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+468 silly lockFile b030c8be-crypt-hash-scrypt-hash-1-1-8-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+469 silly lockFile 951f4ddc-crypt-hash-scrypt-hash-1-1-8-tgz https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+470 silly lockFile 951f4ddc-crypt-hash-scrypt-hash-1-1-8-tgz https://registry.npmjs.org/scrypt-hash/-/scrypt-hash-1.1.8.tgz
+471 silly lockFile 21d3231b-unirest-unirest-0-2-9-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz-unpack
+472 silly lockFile 21d3231b-unirest-unirest-0-2-9-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz-unpack
+473 silly lockFile 2f74b9ff-js-org-unirest-unirest-0-2-9-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+474 silly lockFile 2f74b9ff-js-org-unirest-unirest-0-2-9-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+475 silly lockFile 072a61cc-js-org-unirest-unirest-0-2-9-tgz https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+476 silly lockFile 072a61cc-js-org-unirest-unirest-0-2-9-tgz https://registry.npmjs.org/unirest/-/unirest-0.2.9.tgz
+477 silly lockFile 19a33d3c-ator-validator-3-22-0-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz-unpack
+478 silly lockFile 19a33d3c-ator-validator-3-22-0-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz-unpack
+479 silly lockFile f785bb63-g-validator-validator-3-22-0-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz
+480 silly lockFile f785bb63-g-validator-validator-3-22-0-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/validator/-/validator-3.22.0.tgz
+481 silly lockFile 3f54b470-g-validator-validator-3-22-0-tgz https://registry.npmjs.org/validator/-/validator-3.22.0.tgz
+482 silly lockFile 3f54b470-g-validator-validator-3-22-0-tgz https://registry.npmjs.org/validator/-/validator-3.22.0.tgz
+483 silly lockFile c2f3259f-ed25519-ed25519-0-0-2-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz-unpack
+484 silly lockFile c2f3259f-ed25519-ed25519-0-0-2-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz-unpack
+485 silly lockFile ec20bcf6-js-org-ed25519-ed25519-0-0-2-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+486 silly lockFile ec20bcf6-js-org-ed25519-ed25519-0-0-2-tgz tar:///tmp/npm-22102-BMlzXhKh/registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+487 silly lockFile 559856df-js-org-ed25519-ed25519-0-0-2-tgz https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+488 silly lockFile 559856df-js-org-ed25519-ed25519-0-0-2-tgz https://registry.npmjs.org/ed25519/-/ed25519-0.0.2.tgz
+489 verbose git fetch -a origin (https://github.com/payshares/stex.git)
+490 verbose git rev-list -n1 34ab164e7a452522d4956c6d303162c35c26dcec 34ab164e7a452522d4956c6d303162c35c26dcec
+491 verbose resolved git url git+https://github.com/payshares/stex.git#34ab164e7a452522d4956c6d303162c35c26dcec
+492 verbose tar unpack /tmp/npm-22102-BMlzXhKh/1429769522962-0.68915901822038/tmp.tgz
+493 silly lockFile b6ea165b--0-68915901822038-tmp-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/1429769522962-0.68915901822038/tmp.tgz-unpack
+494 verbose lock tar:///tmp/npm-22102-BMlzXhKh/1429769522962-0.68915901822038/tmp.tgz-unpack /home/ceo/.npm/b6ea165b--0-68915901822038-tmp-tgz-unpack.lock
+495 silly lockFile 86df78b0-9522962-0-68915901822038-tmp-tgz tar:///tmp/npm-22102-BMlzXhKh/1429769522962-0.68915901822038/tmp.tgz
+496 verbose lock tar:///tmp/npm-22102-BMlzXhKh/1429769522962-0.68915901822038/tmp.tgz /home/ceo/.npm/86df78b0-9522962-0-68915901822038-tmp-tgz.lock
+497 silly gunzTarPerm modes [ '775', '664' ]
+498 silly gunzTarPerm extractEntry
+499 silly gunzTarPerm extractEntry .gitignore
+500 silly gunzTarPerm extractEntry CONTRIBUTING.md
+501 silly gunzTarPerm extractEntry LICENSE
+502 silly gunzTarPerm extractEntry README.md
+503 silly gunzTarPerm extractEntry bin/
+504 silly gunzTarPerm extractEntry bin/stex
+505 silly gunzTarPerm extractEntry dev.js
+506 silly gunzTarPerm extractEntry index.js
+507 silly gunzTarPerm extractEntry lib/
+508 silly gunzTarPerm extractEntry lib/db-migrate/
+509 silly gunzTarPerm extractEntry lib/db-migrate/config.js
+510 silly gunzTarPerm extractEntry lib/dev/
+511 silly gunzTarPerm extractEntry lib/dev/gulp-plugins.js
+512 silly gunzTarPerm extractEntry lib/dev/gulp.js
+513 silly gunzTarPerm extractEntry lib/initializer.js
+514 silly gunzTarPerm extractEntry lib/initializers/
+515 silly gunzTarPerm extractEntry lib/initializers/app.js
+516 silly gunzTarPerm extractEntry lib/initializers/autoload.js
+517 silly gunzTarPerm extractEntry lib/initializers/config.js
+518 silly gunzTarPerm extractEntry lib/initializers/db.js
+519 silly gunzTarPerm extractEntry lib/initializers/errors.js
+520 silly gunzTarPerm extractEntry lib/initializers/example.js
+521 silly gunzTarPerm extractEntry lib/initializers/express.js
+522 silly gunzTarPerm extractEntry lib/initializers/logging.js
+523 silly gunzTarPerm extractEntry lib/initializers/metrics.js
+524 silly gunzTarPerm extractEntry lib/initializers/newrelic.js
+525 silly gunzTarPerm extractEntry lib/initializers/redis.js
+526 silly gunzTarPerm extractEntry lib/initializers/sentry.js
+527 silly gunzTarPerm extractEntry lib/initializers/smtp.js
+528 silly gunzTarPerm extractEntry lib/migrate.js
+529 silly gunzTarPerm extractEntry lib/stex-dev.js
+530 silly gunzTarPerm extractEntry lib/stex.js
+531 silly gunzTarPerm extractEntry lib/test-initializers/
+532 silly gunzTarPerm extractEntry lib/test-initializers/chai.js
+533 silly gunzTarPerm extractEntry lib/test-initializers/sinon.js
+534 silly gunzTarPerm extractEntry lib/test-initializers/supertest.js
+535 silly gunzTarPerm extractEntry lib/test-initializers/support.js
+536 silly gunzTarPerm extractEntry lib/test-initializers/test.js
+537 silly gunzTarPerm extractEntry lib/util/
+538 silly gunzTarPerm extractEntry lib/util/bristol-syslog.js
+539 silly gunzTarPerm extractEntry lib/util/errors.js
+540 silly gunzTarPerm extractEntry lib/util/goto-package-root.js
+541 silly gunzTarPerm extractEntry lib/util/json-log-humanizer.js
+542 silly gunzTarPerm extractEntry lib/util/localbin.js
+543 silly gunzTarPerm extractEntry lib/util/nconf.js
+544 silly gunzTarPerm extractEntry lib/util/require-all.js
+545 silly gunzTarPerm extractEntry lib/util/search-up.js
+546 silly gunzTarPerm extractEntry package.json
+547 silly gunzTarPerm extractEntry release-notes.md
+548 silly gunzTarPerm extractEntry test/
+549 silly gunzTarPerm extractEntry test/TODO
+550 silly lockFile b6ea165b--0-68915901822038-tmp-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/1429769522962-0.68915901822038/tmp.tgz-unpack
+551 silly lockFile b6ea165b--0-68915901822038-tmp-tgz-unpack tar:///tmp/npm-22102-BMlzXhKh/1429769522962-0.68915901822038/tmp.tgz-unpack
+552 silly lockFile 86df78b0-9522962-0-68915901822038-tmp-tgz tar:///tmp/npm-22102-BMlzXhKh/1429769522962-0.68915901822038/tmp.tgz
+553 silly lockFile 86df78b0-9522962-0-68915901822038-tmp-tgz tar:///tmp/npm-22102-BMlzXhKh/1429769522962-0.68915901822038/tmp.tgz
+554 silly lockFile 9a4df8c1-ps-github-com-payshares-stex-git https://github.com/payshares/stex.git
+555 silly lockFile 9a4df8c1-ps-github-com-payshares-stex-git https://github.com/payshares/stex.git
+556 error Error: Command failed: Cloning into bare repository '/home/ceo/.npm/_git-remotes/https-githum-com-payshares-payshares-lib-git-7571d6b1'...
+556 error fatal: unable to access 'https://githum.com/payshares/payshares-lib.git/': Failed to connect to githum.com port 443: Connection refused
+556 error
+556 error     at ChildProcess.exithandler (child_process.js:658:15)
+556 error     at ChildProcess.emit (events.js:98:17)
+556 error     at maybeClose (child_process.js:766:16)
+556 error     at Socket.<anonymous> (child_process.js:979:11)
+556 error     at Socket.emit (events.js:95:17)
+556 error     at Pipe.close (net.js:466:12)
+557 error If you need help, you may report this *entire* log,
+557 error including the npm and node versions, at:
+557 error     <http://github.com/npm/npm/issues>
+558 error System Linux 3.13.0-32-generic
+559 error command "/usr/bin/node" "/usr/bin/npm" "install"
+560 error cwd /home/ceo/live/payshares-wallet
+561 error node -v v0.10.37
+562 error npm -v 1.4.28
+563 error code 128
+564 verbose exit [ 1, true ]
