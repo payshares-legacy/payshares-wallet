@@ -45,7 +45,7 @@ an issue number.
 
 * [Bug tracker (Github)](https://github.com/payshares/payshares-wallet/issues)
 * [Contributor License Agreement](Contributor License Agreement)
-* [Explore the API](https://www.payshares.org/api/)
+* [Explore the API](https://www.payshares.co/api/)
 * [Readme for payshares-wallet](https://github.com/payshares/payshares-wallet/blob/master/readme.md)
 * #payshares-dev IRC channel on freenode.org
 

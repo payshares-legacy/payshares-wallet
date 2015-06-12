@@ -10,7 +10,7 @@ var errors         = helper.Stex.errors;
 var KEYPAIR    = helper.testKeyPair;
 var ADDRESS    = helper.testAddress;
 
-var GOOD_CLAIM = JSON.stringify({username: "scott@payshares.org", address: ADDRESS});
+var GOOD_CLAIM = JSON.stringify({username: "scott@payshares.co", address: ADDRESS});
 var GOOD_PROOF = {
   claim:     GOOD_CLAIM,
   publicKey: KEYPAIR.publicKey,

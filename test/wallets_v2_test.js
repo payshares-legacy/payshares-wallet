@@ -30,7 +30,7 @@ describe("POST /v2/wallets/show_login_params", function() {
   });
 
   it("retrieves the login params properly by username", function() {
-    return this.submit({username:"scott@payshares.org"}).expect(200);
+    return this.submit({username:"scott@payshares.co"}).expect(200);
   });
 
   it("fails to find the login params when none exists for the username", function() {
@@ -45,7 +45,7 @@ describe("POST /v2/wallet/get_lock_version", function() {
     this.submit = function() {
       return test.supertestAsPromised(app)
         .post('/v2/wallets/get_lock_version')
-        .sendSigned(this.params, "scott@payshares.org", "scott@payshares.org", helper.testKeyPair)
+        .sendSigned(this.params, "scott@payshares.co", "scott@payshares.co", helper.testKeyPair)
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/);
     };
@@ -97,11 +97,11 @@ describe("POST /v2/wallets/show", function() {
   });
 
   it("retrieves the wallet properly", function() {
-    return this.submit({username:"scott@payshares.org", walletId:new Buffer("scott@payshares.org").toString("base64")}).expect(200);
+    return this.submit({username:"scott@payshares.co", walletId:new Buffer("scott@payshares.co").toString("base64")}).expect(200);
   });
 
   it("retrieves the wallet properly with totpCode", function() {
-    return this.submit({username:"mfa@payshares.org", walletId:new Buffer("mfa@payshares.org").toString("base64"), totpCode:notp.totp.gen("mytotpKey", {})}).expect(200);
+    return this.submit({username:"mfa@payshares.co", walletId:new Buffer("mfa@payshares.co").toString("base64"), totpCode:notp.totp.gen("mytotpKey", {})}).expect(200);
   });
 
   it("fails with 403 when the username is not found", function() {
@@ -109,33 +109,33 @@ describe("POST /v2/wallets/show", function() {
   });
 
   it("fails with 403 when the authToken is incorrect", function() {
-    return this.submit({username:"scott@payshares.org", walletId:"somewrongtoken"}).expect(403);
+    return this.submit({username:"scott@payshares.co", walletId:"somewrongtoken"}).expect(403);
   });
 
   it("fails with 403 when the totpCode is over 60 seconds old", function() {
     var thirtySecondsAgo = new Date().getTime() - (60 * 1000);
     var code = notp.totp.gen("mytotpKey", {_t: thirtySecondsAgo});
-    return this.submit({username:"mfa@payshares.org", walletId:new Buffer("mfa@payshares.org").toString("base64"), totpCode: code}).expect(403);
+    return this.submit({username:"mfa@payshares.co", walletId:new Buffer("mfa@payshares.co").toString("base64"), totpCode: code}).expect(403);
   });
 
   it("locks an ip address out after the configured number of failed login attempts", function() {
     var self = this;
     
-    return this.lockout("scott@payshares.org").then(function() {    
-      return self.submit({username:"scott@payshares.org", walletId:new Buffer("scott@payshares.org").toString("base64")}).expect(403);
+    return this.lockout("scott@payshares.co").then(function() {    
+      return self.submit({username:"scott@payshares.co", walletId:new Buffer("scott@payshares.co").toString("base64")}).expect(403);
     });
   });
 
   it("fails when the totpToken is required and is wrong", function() {
-    return this.submit({username:"mfa@payshares.org", walletId:new Buffer("mfa@payshares.org").toString("base64"), totpCode:"wrongvalue"}).expect(403);
+    return this.submit({username:"mfa@payshares.co", walletId:new Buffer("mfa@payshares.co").toString("base64"), totpCode:"wrongvalue"}).expect(403);
   });
 
   it("succeeds when the totpToken is disabled", function() {
-    return this.submit({username:"mfa-disabled@payshares.org", walletId:new Buffer("mfa-disabled@payshares.org").toString("base64")}).expect(200);
+    return this.submit({username:"mfa-disabled@payshares.co", walletId:new Buffer("mfa-disabled@payshares.co").toString("base64")}).expect(200);
   });
 
   it("resets the totpKey and totpDisabled after the grace period has elapsed", function() {
-    var username = "mfa-disabled@payshares.org";
+    var username = "mfa-disabled@payshares.co";
     return this.submit({username:username, walletId:new Buffer(username).toString("base64")})
       .expect(200)
       .then(function() {
@@ -149,7 +149,7 @@ describe("POST /v2/wallets/show", function() {
   });
 
   it("resets totpDisabled but leaves totpKey in place before the grace period has elapsed", function() {
-    var username = "mfa-disabling@payshares.org";
+    var username = "mfa-disabling@payshares.co";
     return this.submit({username:username, walletId:new Buffer(username).toString("base64"), totpCode:notp.totp.gen("mytotpKey", {})})
       .expect(200)
       .then(function() {
@@ -167,8 +167,8 @@ describe("POST /v2/wallets/show", function() {
 describe("POST /v2/wallets/create", function() {
   beforeEach(function(done) {
     this.params = {
-      "username":         "nullstyle@payshares.org",
-      "usernameProof":    generateUsernameProof("nullstyle@payshares.org"),
+      "username":         "nullstyle@payshares.co",
+      "usernameProof":    generateUsernameProof("nullstyle@payshares.co"),
       "walletId":         new Buffer("12345678123456781234567812345678").toString('base64'),
       "salt":             new Buffer("1234567812345678").toString('base64'),
       "kdfParams":        "{}",
@@ -199,7 +199,7 @@ describe("POST /v2/wallets/create", function() {
     return this.submit()
       .expect(200)
       .then(function() {
-        return walletV2.get("nullstyle@payshares.org").then(function (wallet) {
+        return walletV2.get("nullstyle@payshares.co").then(function (wallet) {
           expect(wallet).to.exist;
         });
       });
@@ -207,7 +207,7 @@ describe("POST /v2/wallets/create", function() {
 
   it("fails when the username isn't provided", helper.blankTest("username"));
   it("fails when the username has already been taken", function() {
-    this.params.username = "scott@payshares.org";
+    this.params.username = "scott@payshares.co";
     return this.submit()
         .expect(400)
         .expectBody({field:"username", code:"already_taken"});
@@ -303,7 +303,7 @@ describe("POST /v2/wallets/update", function() {
     this.submit = function() {
       return test.supertestAsPromised(app)
         .post('/v2/wallets/update')
-        .sendSigned(this.params, "scott@payshares.org", "scott@payshares.org", helper.testKeyPair)
+        .sendSigned(this.params, "scott@payshares.co", "scott@payshares.co", helper.testKeyPair)
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/);
     };
@@ -312,7 +312,7 @@ describe("POST /v2/wallets/update", function() {
       return this.submit()
         .expect(200)
         .then(function () {
-          return walletV2.get("scott@payshares.org");
+          return walletV2.get("scott@payshares.co");
         });
     };
 
@@ -342,7 +342,7 @@ describe("POST /v2/wallets/update", function() {
     var self = this;
 
     return this.submitSuccessfullyAndReturnWallet().then(function(wallet) {
-      expect(wallet.username).to.equal("scott@payshares.org"); // didn't change
+      expect(wallet.username).to.equal("scott@payshares.co"); // didn't change
       var expectedWalletId = new Buffer(self.params.walletId || "", 'base64');
       expectedWalletId = hash.sha2(expectedWalletId);
       expect(wallet.walletId).to.equal(expectedWalletId);
@@ -405,7 +405,7 @@ describe("POST /v2/wallets/recovery/enable", function() {
     this.submit = function() {
       return test.supertestAsPromised(app)
         .post('/v2/wallets/recovery/enable')
-        .sendSigned(this.params, "scott@payshares.org", "scott@payshares.org", helper.testKeyPair)
+        .sendSigned(this.params, "scott@payshares.co", "scott@payshares.co", helper.testKeyPair)
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/);
     };
@@ -421,7 +421,7 @@ describe("POST /v2/wallets/recovery/enable", function() {
       .expect(200)
       .expectBody({status: "success", newLockVersion: 1})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
           expect(w.recoveryId).to.eq(self.params.recoveryId);
           expect(w.recoveryData).to.eq(self.params.recoveryData);
           done();
@@ -440,8 +440,8 @@ describe("POST /v2/wallets/recovery/enable", function() {
 describe("POST /v2/wallets/delete", function() {
   beforeEach(function() {
     this.params = {
-      username: "scott@payshares.org",
-      walletId: "scott@payshares.org",
+      username: "scott@payshares.co",
+      walletId: "scott@payshares.co",
       lockVersion: 0
     };
 
@@ -459,7 +459,7 @@ describe("POST /v2/wallets/delete", function() {
       .expect(200)
       .expectBody({})
       .then(function () {
-        expect(walletV2.get("scott@payshares.org")).to.be.rejectedWith(helper.Stex.errors.RecordNotFound);
+        expect(walletV2.get("scott@payshares.co")).to.be.rejectedWith(helper.Stex.errors.RecordNotFound);
       });
   });
 
@@ -469,7 +469,7 @@ describe("POST /v2/wallets/delete", function() {
       .expect(401)
       .expectBody({status: "fail", code: "invalid_signature"})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
           expect(w).not.to.be.null;
         });
       });
@@ -481,19 +481,19 @@ describe("POST /v2/wallets/delete", function() {
       .expect(401)
       .expectBody({status: "fail", code: "invalid_signature"})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
           expect(w).not.to.be.null;
         });
       });
   });
 
   it("fails when the username is invalid", function () {
-    this.params.username = 'bartek@payshares.org';
+    this.params.username = 'bartek@payshares.co';
     return this.submit()
       .expect(401)
       .expectBody({status: "fail", code: "invalid_signature"})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
           expect(w).not.to.be.null;
         });
       });
@@ -503,7 +503,7 @@ describe("POST /v2/wallets/delete", function() {
 describe("POST /v2/wallets/recovery/show", function() {
   beforeEach(function(done) {
     this.params = {
-      "username":  "scott@payshares.org",
+      "username":  "scott@payshares.co",
       "recoveryId":   "recoveryId"
     };
 
@@ -522,7 +522,7 @@ describe("POST /v2/wallets/recovery/show", function() {
         "lockVersion":  0,
         "recoveryId":   "recoveryId",
         "recoveryData": "foo4"
-      }, "scott@payshares.org", "scott@payshares.org", helper.testKeyPair)
+      }, "scott@payshares.co", "scott@payshares.co", helper.testKeyPair)
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .end(function() {
@@ -537,7 +537,7 @@ describe("POST /v2/wallets/recovery/show", function() {
   });
 
   it("fails when the username is invalid", function () {
-    this.params.username = 'bartek@payshares.org';
+    this.params.username = 'bartek@payshares.co';
     return this.submit()
       .expect(403)
       .expectBody({status: "fail", code: "forbidden"});
@@ -564,7 +564,7 @@ describe("POST /v2/totp/enable", function() {
     this.submit = function() {
       return test.supertestAsPromised(app)
         .post('/v2/totp/enable')
-        .sendSigned(this.params, "scott@payshares.org", "scott@payshares.org", helper.testKeyPair)
+        .sendSigned(this.params, "scott@payshares.co", "scott@payshares.co", helper.testKeyPair)
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/);
     };
@@ -580,7 +580,7 @@ describe("POST /v2/totp/enable", function() {
       .expect(200)
       .expectBody({status: "success", newLockVersion: 1})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
           expect(w.totpKey).to.eq(self.params.totpKey);
           done();
         });
@@ -633,7 +633,7 @@ describe("POST /v2/totp/enable", function() {
       .expect(401)
       .expectBody({status: "fail", code: "malformed_authorization"})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
           expect(w.totpKey).to.be.null;
           done();
         });
@@ -648,11 +648,11 @@ describe("POST /v2/totp/enable", function() {
 
     return test.supertestAsPromised(app)
       .post('/v2/totp/enable')
-      .sendSigned(this.params, "mfa-disabled@payshares.org", "mfa-disabled@payshares.org", helper.testKeyPair)
+      .sendSigned(this.params, "mfa-disabled@payshares.co", "mfa-disabled@payshares.co", helper.testKeyPair)
       .set('Accept', 'application/json')
       .expect(200)
       .then(function () {
-        return walletV2.get("mfa-disabled@payshares.org").then(function(w) {
+        return walletV2.get("mfa-disabled@payshares.co").then(function(w) {
           expect(w.totpDisabledAt).to.be.null;
           expect(w.totpKey).to.eq(self.params.totpKey);
           done();
@@ -674,7 +674,7 @@ describe("POST /v2/totp/disable", function() {
     this.submit = function() {
       return test.supertestAsPromised(app)
         .post('/v2/totp/disable')
-        .sendSigned(this.params, "scott@payshares.org", "scott@payshares.org", helper.testKeyPair)
+        .sendSigned(this.params, "scott@payshares.co", "scott@payshares.co", helper.testKeyPair)
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/);
     };
@@ -686,7 +686,7 @@ describe("POST /v2/totp/disable", function() {
         "lockVersion": 0,
         "totpKey": new Buffer("hello").toString("base64"),
         "totpCode": notp.totp.gen("hello", {})
-      }, "scott@payshares.org", "scott@payshares.org", helper.testKeyPair)
+      }, "scott@payshares.co", "scott@payshares.co", helper.testKeyPair)
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .end(function() {
@@ -699,7 +699,7 @@ describe("POST /v2/totp/disable", function() {
       .expect(200)
       .expectBody({status: "success", newLockVersion: 2})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
           expect(w.totpKey).to.be.null;
           done();
         });
@@ -738,7 +738,7 @@ describe("POST /v2/totp/disable", function() {
       .expect(401)
       .expectBody({status: "fail", code: "malformed_authorization"})
       .then(function () {
-        walletV2.get("scott@payshares.org").then(function(w) {
+        walletV2.get("scott@payshares.co").then(function(w) {
           expect(w.totpKey).not.to.be.null;
         });
         done();
@@ -752,8 +752,8 @@ describe("POST /v2/totp/disable", function() {
 describe("POST /v2/totp/disable_lost_device", function() {
   beforeEach(function(done) {
     this.params = {
-      username: 'scott@payshares.org',
-      walletId: new Buffer("scott@payshares.org").toString("base64")
+      username: 'scott@payshares.co',
+      walletId: new Buffer("scott@payshares.co").toString("base64")
     };
 
     this.submit = function() {
@@ -771,7 +771,7 @@ describe("POST /v2/totp/disable_lost_device", function() {
         "lockVersion": 0,
         "totpKey": new Buffer("hello").toString("base64"),
         "totpCode": notp.totp.gen("hello", {})
-      }, "scott@payshares.org", "scott@payshares.org", helper.testKeyPair)
+      }, "scott@payshares.co", "scott@payshares.co", helper.testKeyPair)
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .end(function() {
@@ -785,7 +785,7 @@ describe("POST /v2/totp/disable_lost_device", function() {
       .expect(200)
       .expectBody({status: "success"})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
 
           expect(w.totpKey).not.to.be.null;
 
@@ -802,13 +802,13 @@ describe("POST /v2/totp/disable_lost_device", function() {
   });
 
   it("returns success on wrong username but doesn't set totpDisabledAt", function(done) {
-    this.params.username = 'bartek@payshares.org';
+    this.params.username = 'bartek@payshares.co';
 
     this.submit()
       .expect(200)
       .expectBody({status: "success"})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
           expect(w.totpKey).not.to.be.null;
           expect(w.totpDisabledAt).to.be.null;
           done();
@@ -820,13 +820,13 @@ describe("POST /v2/totp/disable_lost_device", function() {
   });
 
   it("returns success on wrong walletId but doesn't set totpDisabledAt", function(done) {
-    this.params.walletId = new Buffer("scott2@payshares.org").toString("base64");
+    this.params.walletId = new Buffer("scott2@payshares.co").toString("base64");
 
     this.submit()
       .expect(200)
       .expectBody({status: "success"})
       .then(function () {
-        return walletV2.get("scott@payshares.org").then(function(w) {
+        return walletV2.get("scott@payshares.co").then(function(w) {
           expect(w.totpKey).not.to.be.null;
           expect(w.totpDisabledAt).to.be.null;
           done();

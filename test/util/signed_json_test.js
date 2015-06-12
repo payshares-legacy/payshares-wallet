@@ -80,7 +80,7 @@ describe("signedJson.middleware", function() {
     this.submit = function() {
       return test.supertestAsPromised(app)
         .post('/v2/signed_json_test')
-        .sendSigned({tableFlip: "(╯°□°）╯︵ ┻━┻"}, "scott@payshares.org", "scott@payshares.org", helper.testKeyPair)
+        .sendSigned({tableFlip: "(╯°□°）╯︵ ┻━┻"}, "scott@payshares.co", "scott@payshares.co", helper.testKeyPair)
         .set('Accept', 'application/json');
     };
   });
@@ -90,7 +90,7 @@ describe("signedJson.middleware", function() {
   });
 
   it("should populate req.verified.walletId string", function() {
-    return this.submit().expectBody({ walletId:  new Buffer("scott@payshares.org").toString("base64") });
+    return this.submit().expectBody({ walletId:  new Buffer("scott@payshares.co").toString("base64") });
   });
 
   it("should populate req.verified.body object", function() {
@@ -109,20 +109,20 @@ describe("signedJson.middleware", function() {
 
   it("should return 401 Unauthorized if no the wallet-id is not found", function() {
     return this.submit()
-      .setAuthHeader('scott@payshares.org', 'notfound', "somesignature")
+      .setAuthHeader('scott@payshares.co', 'notfound', "somesignature")
       .expect(401);
   });
 
   it("should return 401 Unauthorized if no the username and walletID are from different records", function() {
     return this.submit()
-      .setAuthHeader('david@payshares.org', "scott@payshares.org", "somesignature")
+      .setAuthHeader('david@payshares.co', "scott@payshares.co", "somesignature")
       .expect(401);
   });
 
   it("should return 401 Unauthorized if no the signature does not verify the body", function() {
     var signature = sign.gen("some message", helper.testKeyPair.secretKey);
     return this.submit()
-      .setAuthHeader("scott@payshares.org", "scott@payshares.org", signature)
+      .setAuthHeader("scott@payshares.co", "scott@payshares.co", signature)
       .expect(401);
   });
 });

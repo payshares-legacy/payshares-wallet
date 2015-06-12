@@ -77,11 +77,11 @@ var loadFixtures = function() {
     makeWallet({ id:'4', authToken:'4', mainData:'foo4', keychainData:'foo4' }),
     makeWallet({ id:'5', authToken:'5', mainData:'foo5', keychainData:'foo5', migratedAt: new Date() }),
 
-    makeWalletV2({username: "scott@payshares.org", mainData:'foo', keychainData:'foo'}),
-    makeWalletV2({username: "david@payshares.org", mainData:'foo', keychainData:'foo'}),
-    makeWalletV2({username: "mfa@payshares.org",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64")}),
-    makeWalletV2({username: "mfa-disabled@payshares.org",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64"), totpDisabledAt:now}),
-    makeWalletV2({username: "mfa-disabling@payshares.org",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64"), totpDisabledAt:tenMinutesFromNow}),
+    makeWalletV2({username: "scott@payshares.co", mainData:'foo', keychainData:'foo'}),
+    makeWalletV2({username: "david@payshares.co", mainData:'foo', keychainData:'foo'}),
+    makeWalletV2({username: "mfa@payshares.co",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64")}),
+    makeWalletV2({username: "mfa-disabled@payshares.co",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64"), totpDisabledAt:now}),
+    makeWalletV2({username: "mfa-disabling@payshares.co",   mainData:'foo', keychainData:'foo', totpKey:new Buffer('mytotpKey').toString("base64"), totpDisabledAt:tenMinutesFromNow}),
   ]);
 };
 

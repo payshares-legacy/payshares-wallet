@@ -6,7 +6,7 @@ var _       = helper.Stex._;
 describe("POST /wallets/show", function() {
   beforeEach(function(done) {
     this.params = {};
-    this.referer = "https://launch.payshares.org/#login";
+    this.referer = "https://launch.payshares.co/#login";
     this.submit = function() {
       return test.supertest(app)
         .post('/wallets/show')
@@ -99,7 +99,7 @@ describe("POST /wallets/show", function() {
 
   it("doesn't log a warning when the referer is as expected", function(done) {
     this.sinon.spy(log, 'warn');
-    this.referer = "https://launch.payshares.org/#login";
+    this.referer = "https://launch.payshares.co/#login";
     this.submit().end(function() {
       expectNoRefererWarning();
       done();
