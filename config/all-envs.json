@@ -22,7 +22,7 @@
     "sleepTime": 250
   },
 
-  "expectedRefererDomain": "wallet.payshares.co",
+  "expectedRefererDomain": "wallet.payshares.org",
   "fbgiveEndpoint": "",
   "fbgiveAdminKey": "",
 
