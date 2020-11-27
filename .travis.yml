@@ -1,9 +1,11 @@
+os: linux
+dist: trusty
 language: node_js
-node_js:
-- '0.10'
+before_install:
+  - nvm install 0.10.28
+  - nvm use 0.10.28
 services:
 - mysql
 - redis
 notifications:
-  slack:
-    secure: SlpY9HUA8yJveU7VJTAcJpCMSxMD9+4MvEktFvv4RdwhfGQMmmWdHUk6kIa/l52TvFRRzUMGaD93N00E0b3eTs1OhTEhubLQ62NBLc5r6UdQ7WO0oVsO6bQJIOFgV7imEdxu5wtLyn7+lFCCA+n6fExnHDy04V1D+psvHEZvoAg=
+  email: false
