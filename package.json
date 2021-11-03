@@ -15,7 +15,7 @@
     "payshares-lib": "git+https://github.com/payshares/payshares-lib.git#master",
     "stex": "git+https://github.com/payshares/stex.git#master",
     "unirest": "^0.2.7",
-    "validator": "^3.19.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "gulp": "^3.8.5"
